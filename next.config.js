@@ -1,1 +1,13 @@
-/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  reactStrictMode: true,\n  swcMinify: true,\n  images: {\n    unoptimized: true,\n  },\n};\n\nmodule.exports = nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: false,
+  swcMinify: false,
+  images: {
+    unoptimized: true,
+  },
+  experimental: {
+    appDir: true,
+  },
+};
+
+module.exports = nextConfig;
