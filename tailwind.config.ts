@@ -1,1 +1,27 @@
-import type { Config } from 'tailwindcss';\n\nconst config: Config = {\n  content: [\n    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',\n    './src/components/**/*.{js,ts,jsx,tsx,mdx}',\n    './src/app/**/*.{js,ts,jsx,tsx,mdx}',\n  ],\n  theme: {\n    extend: {\n      colors: {\n        primary: '#0F172A',\n        secondary: '#1E293B',\n        accent: '#3B82F6',\n        success: '#10B981',\n        warning: '#F59E0B',\n        danger: '#EF4444',\n      },\n      fontFamily: {\n        sans: ['Inter', 'sans-serif'],\n        mono: ['Fira Code', 'monospace'],\n      },\n    },\n  },\n  plugins: [],\n};\nexport default config;
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#0F172A',
+        secondary: '#1E293B',
+        accent: '#3B82F6',
+        success: '#10B981',
+        warning: '#F59E0B',
+        danger: '#EF4444',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['Fira Code', 'monospace'],
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
