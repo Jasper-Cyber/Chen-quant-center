@@ -21,6 +21,7 @@ export const pillarCards = [
     num: 1,
     href: "/research",
     title: "Research and Insights",
+    image: "/images/research_card.png",
     description:
       "Research and commentary on value creation, productivity, technology, and financial markets.",
   },
@@ -28,6 +29,7 @@ export const pillarCards = [
     num: 2,
     href: "/market",
     title: "Market Data",
+    image: "/images/market_card.png",
     description:
       "A dashboard of market data and visualizations that help explore economic activity, market behavior, and financial insights. ",
   },
@@ -35,6 +37,7 @@ export const pillarCards = [
     num: 3,
     href: "/quant-lab",
     title: "Quant Lab",
+    image: "/images/quant_card.png",
     description:
       "Quantitative tools and models for analyzing market conditions, risk, valuation, sentiment, and performance.",
   },

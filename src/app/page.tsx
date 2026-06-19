@@ -35,17 +35,30 @@ export default function HomePage() {
           <h2 className="section-title">Insights · Markets · Analytics</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {pillarCards.map((p) => (
-              <Link key={p.href} href={p.href} className="card group block">
-                <span className="label-muted">Section {p.num}</span>
-                <h3 className="mt-2 font-serif text-xl font-semibold text-ink group-hover:text-accent">
-                  {p.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-mist">
-                  {p.description}
-                </p>
-                <span className="mt-6 inline-block text-sm font-semibold text-accent">
-                  Open section →
-                </span>
+              <Link key={p.href} href={p.href} className="card group flex flex-col justify-between min-h-[460px] h-[480px] hover:scale-[1.02] hover:shadow-lg transition-all duration-300 ease-out bg-white p-6">
+                <div>
+                  <span className="label-muted">Section {p.num}</span>
+                  <h3 className="mt-2 font-serif text-2xl font-bold text-ink group-hover:text-accent transition-colors">
+                    {p.title}
+                  </h3>
+                </div>
+                
+                <div className="my-4 relative w-full h-[180px] rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  />
+                </div>
+
+                <div>
+                  <p className="text-sm leading-relaxed text-mist">
+                    {p.description}
+                  </p>
+                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent gap-1 group-hover:underline">
+                    Open section <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
