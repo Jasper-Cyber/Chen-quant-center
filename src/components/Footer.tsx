@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="mt-8 text-xs text-mist">
-          {new Date().getFullYear()} {site.name}. {site.focus}
+          © 2026 Chen Quant Center. All rights reserved.
         </p>
       </div>
     </footer>
