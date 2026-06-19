@@ -146,7 +146,7 @@ export default function MarketDashboard() {
               <div>
                 <p className="font-serif text-xl font-semibold">
                   {error ? (
-                    <span className="text-red-600">Ticker "{symbol}" not found</span>
+                    <span className="text-red-600">Ticker &quot;{symbol}&quot; not found</span>
                   ) : (
                     name || symbol
                   )}

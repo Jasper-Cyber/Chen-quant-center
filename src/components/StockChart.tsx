@@ -22,7 +22,7 @@ type Props = {
 
 const CandlestickShape = (props: any) => {
   const { x, y, width, height, payload, yAxis } = props;
-  if (!payload || x == null || y == null || height == null) return null;
+  if (!payload || x == null || y == null || height == null) return <g />;
 
   const { open, close, low, high } = payload;
   const isUp = close >= open;
@@ -225,7 +225,7 @@ export function ChartBlock({
   subtitle?: string;
   data: any[];
   lines: string[];
-  domain?: [number, number];
+  domain?: [number | string, number | string];
   ticks?: number[];
   isCandle?: boolean;
   allowDecimals?: boolean;

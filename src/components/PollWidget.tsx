@@ -66,7 +66,7 @@ export default function PollWidget() {
         console.error("Failed to parse voted polls from localStorage", e);
       }
     }
-  }, []);
+  }, [getCurrentQuarter]);
 
   async function vote(pollId: PollId, choice: string) {
     if (votedPolls.has(pollId)) {
