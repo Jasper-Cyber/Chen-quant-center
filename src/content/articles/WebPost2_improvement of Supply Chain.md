@@ -82,7 +82,7 @@ The future of value creation may depend not only on technological innovation, bu
 <AuthorBio 
   name="Jia Chen" 
   role="Founder of Chen Quant Center" 
-  bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. He holds a Bachelor of Physics and MBA from Sun Yat-sen University, a Master of Economics from Bocconi University, and is currently pursuing a Master of Science in Software Development at Boston University." 
+  bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. Drawing on experience across industrial services, international trade, project management, economics, and software development, he explores how real-world operational systems shape long-term investment outcomes." 
   avatarUrl="" 
 />  
 
