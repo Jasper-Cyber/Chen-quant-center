@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { execSync } from "child_process";
-import path from "path";
+import { getStockDataWithFallback } from "@/lib/yahoo-finance";
 
 export const dynamic = "force-dynamic";
 
@@ -16,17 +15,10 @@ const MACRO_TICKERS = [
 ];
 
 export async function GET() {
-  const scriptPath = path.join(process.cwd(), "scripts", "fetch_yf.py");
   const allSymbols = MACRO_TICKERS.map(m => m.symbol).join(",");
 
   try {
-    // Execute Python ONCE for all tickers
-    const output = execSync(`python "${scriptPath}" "${allSymbols}" 5d`, {
-      encoding: "utf-8",
-      timeout: 30000,
-    });
-
-    const batchData = JSON.parse(output);
+    const batchData = await getStockDataWithFallback(allSymbols, "5d") as any;
     
     const snapshots = MACRO_TICKERS.map((item) => {
       const data = batchData[item.symbol];

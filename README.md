@@ -2,7 +2,7 @@
 
 Built from cqc-cursor.txt.
 
-Slogan: Evidence, Logic, Value creation
+Slogan: Evidence · Logic · Value Creation
 
 ## Routes
 

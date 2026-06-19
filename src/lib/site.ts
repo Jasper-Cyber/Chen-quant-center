@@ -3,7 +3,7 @@ import { type Article } from "./articles";
 export const site = {
   name: "Chen Quant Center",
   shortName: "CQC",
-  slogan: "Evidence, Logic, Value creation",
+  slogan: "Evidence · Logic · Value Creation",
   focus: "Insights \u2022 Markets \u2022 Analytics",
   email: "example@chenquant.com",
   social: {
