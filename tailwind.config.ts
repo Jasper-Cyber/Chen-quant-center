@@ -1,27 +1,30 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#0F172A',
-        secondary: '#1E293B',
-        accent: '#3B82F6',
-        success: '#10B981',
-        warning: '#F59E0B',
-        danger: '#EF4444',
+        ink: "#0f172a",
+        panel: "#1e293b",
+        mist: "#64748b",
+        paper: "#f8fafc",
+        accent: "#1d4ed8",
+        gold: "#b45309",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'],
+        serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
+        sans: ["system-ui", "-apple-system", "Segoe UI", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 };
+
 export default config;

@@ -1,25 +1,30 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { site } from "@/lib/site";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Chen Quant Center - Quantitative Research & Market Analytics',
-  description: 'Investment research, market data visualization, and quantitative factor analysis platform',
+  title: {
+    default: site.name,
+    template: `%s | ${site.shortName}`,
+  },
+  description: `${site.slogan}. ${site.focus}`,
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className="bg-primary text-white">
+    <html lang="en" suppressHydrationWarning>
+      <body 
+        className="flex min-h-screen flex-col font-sans"
+        suppressHydrationWarning
+      >
         <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
