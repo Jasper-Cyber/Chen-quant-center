@@ -53,3 +53,12 @@ Perhaps this is one reason why the gap between technological possibility and rea
 
 For investors, understanding that process may be just as important as understanding the technology itself. 
 
+---
+
+<AuthorBio 
+  name="Jia Chen" 
+  role="Founder of Chen Quant Center" 
+  bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. He holds a Bachelor of Physics and MBA from Sun Yat-sen University, a Master of Economics from Bocconi University, and is currently pursuing a Master of Science in Software Development at Boston University." 
+  avatarUrl="" 
+/>  
+

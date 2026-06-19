@@ -119,3 +119,12 @@ For long-term investors, the key is not tracking every dollar of "money flow," b
 
 **Tags:** Investing, Market Structure, Capital Markets, Valuation, Behavioral Finance, Financial Education 
 
+---
+
+<AuthorBio 
+  name="Jia Chen" 
+  role="Founder of Chen Quant Center" 
+  bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. He holds a Bachelor of Physics and MBA from Sun Yat-sen University, a Master of Economics from Bocconi University, and is currently pursuing a Master of Science in Software Development at Boston University." 
+  avatarUrl="" 
+/>  
+

@@ -135,3 +135,11 @@ These notes are not investment recommendations, and many of my views may ultimat
 
 More than anything, this project is intended as a long-term learning process — an attempt to better understand how technology, production systems, and capital interact in shaping economic value over time. 
 
+---
+
+<AuthorBio 
+  name="Jia Chen" 
+  role="Founder of Chen Quant Center" 
+  bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. He holds a Bachelor of Physics and MBA from Sun Yat-sen University, a Master of Economics from Bocconi University, and is currently pursuing a Master of Science in Software Development at Boston University." 
+  avatarUrl="" 
+/>  
