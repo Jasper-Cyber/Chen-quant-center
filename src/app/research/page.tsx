@@ -15,7 +15,6 @@ export default function ResearchPage() {
 
   return (
     <div className="container-cqc py-14 md:py-20">
-      <p className="label-muted">Research and Insights</p>
       <p className="mt-2 text-lg leading-relaxed text-slate-700">
         Independent analysis and personal insights focused on value creation, innovation, productivity, technology and financial markets.
       </p>
