@@ -1,6 +1,7 @@
 ---
 title: "Where Did the Money Go?"
 date: "2026-06-18"
+author: "Jia Chen"
 excerpt: "This article explores several common misconceptions about money flows, market capitalization, and stock prices—and explains why understanding these mechanics can help investors think more clearly about valuation, market movements, and capital allocation."
 ---
 

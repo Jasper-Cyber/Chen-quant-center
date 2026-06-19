@@ -1,6 +1,7 @@
 ---
 title: "Value Creation: From Production Lines to Capital Markets"
 date: "2026-05-21"
+author: "Jia Chen"
 excerpt: "In this article, I explore two questions that increasingly shape how I think about business and investing: How is real value created? Which companies are genuinely creating incremental value in the real economy? Understanding these questions may be more important for long-term investors than following short-term market narratives or technological hype."
 ---
 

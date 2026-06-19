@@ -1,6 +1,7 @@
 ---
 title: "Why I’m Rethinking Supply Chains, Technology, and Long-Term Value Creation"
 date: "2026-05-07"
+author: "Jia Chen"
 excerpt: "Notes on productivity, industrial systems, and capital allocation in a changing global economy."
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Beyond Cost Optimization: The Emerging Economics of Supply-Chain Resilience"
 date: "2026-05-14"
+author: "Jia Chen"
 excerpt: "This article explores how supply-chain strategy may be evolving from pure cost optimization toward a broader focus on stability, coordination, and long-term adaptability."
 ---
  
