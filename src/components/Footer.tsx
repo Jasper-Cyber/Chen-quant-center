@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="mt-8 text-xs text-mist">
-          © 2026 Chen Quant Center. All rights reserved.
+          © 2026 Jia Chen. Published through Chen Quant Center. All rights reserved.
         </p>
       </div>
     </footer>
