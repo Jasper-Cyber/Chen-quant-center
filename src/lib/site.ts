@@ -14,7 +14,7 @@ export const site = {
   },
 };
 
-export const briefText = "I believe sustainable investment returns ultimately arise from improvements in productivity, innovation, and the ability of businesses to satisfy human needs. Through economic reasoning, quantitative analysis, and data-driven research, CQC explores how technology, capital allocation, and market behavior interact to create long-term value. The objective is to understand how value is created, measured, and allocated in financial markets and the real economy.";
+export const briefText = "Chen Quant Center is an independent research platform. I believe sustainable investment returns ultimately arise from improvements in productivity, innovation, and the ability of businesses to satisfy human needs. Through economic reasoning, quantitative analysis, and data-driven research, CQC explores how technology, capital allocation, and market behavior interact to create long-term value. The objective is to understand how value is created, measured, and allocated in financial markets and the real economy.";
 
 export const pillarCards = [
   {
