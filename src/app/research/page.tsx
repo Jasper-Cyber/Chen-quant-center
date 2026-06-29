@@ -3,11 +3,11 @@ import { site } from "@/lib/site";
 import { getSortedArticlesData } from "@/lib/articles"; // Import getSortedArticlesData
 
 export const metadata = { title: "Research and Insights" };
-
+X
 const channels = [
   { name: "Substack", href: site.social.substack, note: "Long-form notes and memos" },
   { name: "LinkedIn", href: site.social.linkedin, note: "Professional posts and commentary" },
-  { name: "WeChat Public Account", href: site.social.wechat, note: "Regional audience updates" },
+  { name: "X", href: site.social.X, note: "X updates" },
 ];
 
 export default function ResearchPage() {

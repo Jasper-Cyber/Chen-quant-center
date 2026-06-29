@@ -8,8 +8,8 @@ export const site = {
   email: "example@chenquant.com",
   social: {
     substack: "https://substack.com/@jasperchen666",
-    linkedin: "www.linkedin.com/in/jia-chen-7a1a6036",
-    wechat: "jiaobserver",
+    linkedin: "https://www.linkedin.com/in/jia-chen-7a1a6036",
+    X: "https://x.com/Jia56888",
     github: "https://github.com/Jasper-Cyber",
   },
 };

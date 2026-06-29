@@ -6,7 +6,7 @@ const socialLinks = [
   { name: "Substack", href: site.social.substack },
   { name: "LinkedIn", href: site.social.linkedin },
   { name: "GitHub", href: site.social.github },
-  { name: "WeChat", href: site.social.wechat },
+  { name: "X", href: site.social.X },
 ];
 
 export default function AboutPage() {
