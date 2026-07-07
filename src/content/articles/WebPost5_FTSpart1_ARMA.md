@@ -100,10 +100,10 @@ The **Autoregressive (AR)** model assumes that the present depends
 directly on previous observations.
 
 An AR(1) process is expressed as:
+
 $$X_t = c + \phi_1 X_{t-1} + \epsilon_t$$
 
 
-$$X_t = c + \phi_1 X_{t-1} + \epsilon_t$$
 
 Where $X_t$ denotes the value of the series at time $t$ , $c$ is a
 constant, $\phi_1$ is the coefficient that measures the influence of the
