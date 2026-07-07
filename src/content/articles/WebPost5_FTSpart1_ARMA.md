@@ -11,8 +11,9 @@ One of the first questions in quantitative finance is whether financial
 markets are entirely random or whether traces of the past continue to
 influence the future.
 
+<div align="center">
 ![Figure 1 Time Series](/images/TimeseriesP1F1.png)
-
+</div>
 At first glance, daily price movements appear chaotic. News arrives
 unexpectedly, investor sentiment changes rapidly, and external shocks
 constantly reshape expectations. On the other hand, we often hear
@@ -95,12 +96,14 @@ The **Autoregressive (AR)** model assumes that the present depends
 directly on previous observations.
 
 An AR(1) process is expressed as:
+$$X_t = c + \phi_1 X_{t-1} + \epsilon_t$$
 
-$$X_{t} = c + \phi_{1}X_{t - 1} + \epsilon_{t}$$
 
-Where $X_{t}$denotes the value of the series at time $t$, $c$ is a
-constant, $\phi$ is the coefficient that measures the influence of the
-previous observation $X_{t - 1}$on the current value, and $\epsilon_{t}$
+$$X_t = c + \phi_1 X_{t-1} + \epsilon_t$$
+
+Where $X_t$ denotes the value of the series at time $t$ , $c$ is a
+constant, $\phi_1$ is the coefficient that measures the influence of the
+previous observation $X_{t-1}$ on the current value, and $\epsilon_t$
 represents a white-noise error term. This function expresses a
 simplified assumption:
 
@@ -110,11 +113,11 @@ value, plus a new random shock.*
 ![Figure 4 AR(1) Model](/images/TimeseriesP1F4.png)
 
 Examples include: Inflation persistence; Business cycles; Commodity
-prices, etc. The parameter $\phi$ measures memory: $\phi$ \> 0 :
-persistence, $\phi$ \< 0 : reversal, $\phi$ = 0 : no dependence. If the
+prices, etc. The parameter $\phi$ measures memory: $\phi$ > 0 :
+persistence, $\phi$ < 0 : reversal, $\phi$ = 0 : no dependence. If the
 absolute value of coefficient exceeds 1, the process becomes unstable
 because shocks accumulate rather than dissipate. Therefore, a stationary
-AR(1) process requires $\mid \phi \mid < 1$. In this way, many economic
+AR(1) process requires $| \phi | < 1$. In this way, many economic
 systems can be viewed as balancing persistence with adaptation.
 
 ------------------------------------------------------------------------
@@ -129,7 +132,7 @@ current values depend on past disturbances.
 
 An MA(1) process is given by:
 
-$$y_{t} = \ \mu + \ \epsilon_{t} + \ \theta\epsilon_{\left\{ t - 1 \right\}}$$
+$$y_{t} = \mu + \epsilon_{t} + \theta\epsilon_{t - 1}$$
 
 The key idea is:
 
@@ -154,7 +157,7 @@ shape present outcomes.
 Although both models describe temporal dependence, their interpretations
 differ fundamentally.
 
-|**Model**|**Interpretation**|**Economic Meaning**|
+|Model|Interpretation|Economic Meaning|
 |:---:|:---:|:---:|
 | AR |Dependence on past values|Persistence and inertia|
 | MA |Dependence on past shocks|Memory of disturbances|
@@ -178,7 +181,7 @@ mechanisms.
 
 An ARMA(1,1) specification can be written as:
 
-$$y_{t} = \ c\  + \ \phi y_{\left\{ t - 1 \right\}} + \ \epsilon_{t} + \ \theta\epsilon_{\left\{ t - 1 \right\}}$$
+$$y_{t} = c + \phi y_{t - 1} + \epsilon_{t} + \theta\epsilon_{t - 1}$$
 
 Conceptually, this means:
 
