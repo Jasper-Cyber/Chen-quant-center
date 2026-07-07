@@ -17,8 +17,8 @@ influence the future.
 At first glance, daily price movements appear chaotic. News arrives
 unexpectedly, investor sentiment changes rapidly, and external shocks
 constantly reshape expectations. On the other hand, we often hear
-expressions such as \"the trend is your friend,\" \"history repeats
-itself,\" or \"the rich get richer.\" Although these sayings come from
+expressions such as "the trend is your friend," "history repeats
+itself," or "the rich get richer." Although these sayings come from
 different contexts, they all imply that the past influences the future.
 Reality, however, is more nuanced. Historical conditions matter, but
 unexpected events continually reshape the trajectory of economic and
