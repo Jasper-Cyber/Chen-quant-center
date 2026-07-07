@@ -8,8 +8,7 @@ One of the first questions in quantitative finance is whether financial
 markets are entirely random or whether traces of the past continue to
 influence the future.
 
-\<div align=\"center\"\> \<img src=\"/images/timeseriesp1f1.png\"
-alt=\"Figure 1 Time Series\" /\> \</div\>
+![Figure 1 Time Series](/images/timeseriesp1f1.png)
 
 At first glance, daily price movements appear chaotic. News arrives
 unexpectedly, investor sentiment changes rapidly, and external shocks
@@ -22,8 +21,7 @@ unexpected events continually reshape the trajectory of economic and
 financial systems. Time-series models attempt to describe this
 interaction between persistence and innovation.
 
-\<div align=\"center\"\> \<img src=\"/images/timeseriesp1f2.png\"
-alt=\"Figure 2 White Noise\" /\> \</div\>
+![Figure 2 White Noise](/images/timeseriesp1f2.png)
 
 Understanding these patterns is the purpose of time-series analysis.
 
@@ -70,8 +68,7 @@ exists, observations behave like independent random shocks. Strong
 autocorrelation suggests that historical information still contains
 explanatory power for future outcomes.
 
-\<div align=\"center\"\> \<img src=\"/images/timeseriesp1f3.png\"
-alt=\"Figure 3 Autocorrelation\" /\> \</div\>
+![Figure 3 Autocorrelation](/images/timeseriesp1f3.png)
 
 The purpose of autocorrelation function is to measure the statistical
 relationship between observations at different time lags. The
@@ -98,26 +95,24 @@ An AR(1) process is expressed as:
 
 $$X_{t} = c + \phi_{1}X_{t - 1} + \epsilon_{t}$$
 
-Where \$X_t\$ denotes the value of the series at time \$t\$, \$c\$ is a
-constant, \$\\phi\$ is the coefficient that measures the influence of
-the previous observation \$X\_{t-1}\$ on the current value, and
-\$\\epsilon_t\$ represents a white-noise error term. This function
-expresses a simplified assumption:
+Where $X_{t}$denotes the value of the series at time $t$, $c$ is a
+constant, $\phi$ is the coefficient that measures the influence of the
+previous observation $X_{t - 1}$on the current value, and $\epsilon_{t}$
+represents a white-noise error term. This function expresses a
+simplified assumption:
 
 *Today\'s value equals a constant, plus a fraction of yesterday\'s
 value, plus a new random shock.*
 
-\<div align=\"center\"\> \<img src=\"/images/timeseriesp1f4.png\"
-alt=\"Figure 4 AR(1) Model\" /\> \</div\>
+![Figure 4 AR(1) Model](/images/timeseriesp1f4.png)
 
 Examples include: Inflation persistence; Business cycles; Commodity
-prices, etc. The parameter \$\\phi\$ measures memory: \$\\phi \> 0\$:
-persistence, \$\\phi \< 0\$: reversal, \$\\phi = 0 \$: no dependence. If
-the absolute value of coefficient exceeds 1, the process becomes
-unstable because shocks accumulate rather than dissipate. Therefore, a
-stationary AR(1) process requires $\mid \phi \mid < 1$. In this way,
-many economic systems can be viewed as balancing persistence with
-adaptation.
+prices, etc. The parameter $\phi$ measures memory: $\phi$ \> 0 :
+persistence, $\phi$ \< 0 : reversal, $\phi$ = 0 : no dependence. If the
+absolute value of coefficient exceeds 1, the process becomes unstable
+because shocks accumulate rather than dissipate. Therefore, a stationary
+AR(1) process requires $\mid \phi \mid < 1$. In this way, many economic
+systems can be viewed as balancing persistence with adaptation.
 
 ------------------------------------------------------------------------
 
@@ -131,9 +126,7 @@ current values depend on past disturbances.
 
 An MA(1) process is given by:
 
-\$\$\
-y_t = \\mu + \\epsilon_t + \\theta \\epsilon\_{t-1}\
-\$\$
+$$y_{t} = \ \mu + \ \epsilon_{t} + \ \theta\epsilon_{\left\{ t - 1 \right\}}$$
 
 The key idea is:
 
@@ -148,8 +141,8 @@ In practice: Supply-chain disruptions affect future production, monetary
 policy announcements influence expectations for several periods, market
 surprises generate delayed responses from investors.
 
-The parameter \$ \\theta \$ determines how strongly past shocks continue
-to shape present outcomes.
+The parameter $\theta$ determines how strongly past shocks continue to
+shape present outcomes.
 
 ------------------------------------------------------------------------
 
@@ -158,18 +151,13 @@ to shape present outcomes.
 Although both models describe temporal dependence, their interpretations
 differ fundamentally.
 
-  ----------------------------------------------------------------------
-  **Model**   **Interpretation**      **Economic Meaning**
-  ----------- ----------------------- ----------------------------------
-  AR          Dependence on past      Persistence and inertia
-              values                  
-
-  MA          Dependence on past      Memory of disturbances
-              shocks                  
-
-  ARMA        Combination of both     Dynamic systems with inertia and
-                                      shocks
-  ----------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------
+  **Model**              **Interpretation**                           **Economic Meaning**
+  :----------------:   :------------------------------: :----------------------------------------:
+  AR                 Dependence on past values              Persistence and inertia
+  MA                 Dependence on past shocks              Memory of disturbances
+  ARMA               Combination of both                    Dynamic systems with inertia and shocks
+  --------------------------------------------------------------------------------------------------------
 
 An AR model suggests that the system itself contains internal momentum.
 
@@ -178,8 +166,7 @@ whose effects gradually dissipate.
 
 Real-world systems often exhibit both characteristics simultaneously.
 
-\<div align=\"center\"\> \<img src=\"/images/timeseriesp1f5.png\"
-alt=\"Figure 5 AR vs MA\" /\> \</div\>
+![Figure 5 AR vs MA](/images/timeseriesp1f5.png)
 
 ------------------------------------------------------------------------
 
@@ -190,8 +177,7 @@ mechanisms.
 
 An ARMA(1,1) specification can be written as:
 
-\$\$y_t = c + \\phi y\_{t-1} + \\epsilon_t + \\theta
-\\epsilon\_{t-1}\$\$
+$$y_{t} = \ c\  + \ \phi y_{\left\{ t - 1 \right\}} + \ \epsilon_{t} + \ \theta\epsilon_{\left\{ t - 1 \right\}}$$
 
 Conceptually, this means:
 
@@ -209,8 +195,7 @@ seek to represent.
 ARMA models provide a parsimonious framework for describing these
 interactions.
 
-\<div align=\"center\"\> \<img src=\"/images/timeseriesp1f6.png\"
-alt=\"Figure 6 ARMA Model\" /\> \</div\>
+![Figure 6 ARMA Model](/images/timeseriesp1f6.png)
 
 ------------------------------------------------------------------------
 
@@ -293,3 +278,12 @@ and shocks propagate through dynamic economic systems.
 In the next article, we move from modeling expectations to modeling
 uncertainty itself, introducing the ARCH framework and the phenomenon of
 volatility clustering.
+
+---
+
+<AuthorBio 
+  name="Jia Chen" 
+  role="Founder of Chen Quant Center" 
+  bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. Drawing on experience across industrial services, international trade, project management, economics, and software development, he explores how real-world operational systems shape long-term investment outcomes." 
+  avatarUrl="" 
+/>  
