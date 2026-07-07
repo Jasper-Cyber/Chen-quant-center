@@ -1,6 +1,9 @@
-# **Understanding Financial Time Series Models (Part I): ARMA and Market Dynamics**
-
-## *Chen Quant Academy Series -- Quantitative Models Explained*
+---
+title: "Understanding Financial Time Series Models (Part I): ARMA and Market Dynamics"
+date: "2026-07-06"
+author: "Jia Chen"
+excerpt: "Chen Quant Academy Series -- Quantitative Models Explained"
+---
 
 ### **Introduction: Is the Market Completely Random?**
 
@@ -8,7 +11,7 @@ One of the first questions in quantitative finance is whether financial
 markets are entirely random or whether traces of the past continue to
 influence the future.
 
-![Figure 1 Time Series](/images/timeseriesp1f1.png)
+![Figure 1 Time Series](/images/TimeseriesP1F1.png)
 
 At first glance, daily price movements appear chaotic. News arrives
 unexpectedly, investor sentiment changes rapidly, and external shocks
@@ -21,7 +24,7 @@ unexpected events continually reshape the trajectory of economic and
 financial systems. Time-series models attempt to describe this
 interaction between persistence and innovation.
 
-![Figure 2 White Noise](/images/timeseriesp1f2.png)
+![Figure 2 White Noise](/images/TimeseriesP1F2.png)
 
 Understanding these patterns is the purpose of time-series analysis.
 
@@ -68,7 +71,7 @@ exists, observations behave like independent random shocks. Strong
 autocorrelation suggests that historical information still contains
 explanatory power for future outcomes.
 
-![Figure 3 Autocorrelation](/images/timeseriesp1f3.png)
+![Figure 3 Autocorrelation](/images/TimeseriesP1F3.png)
 
 The purpose of autocorrelation function is to measure the statistical
 relationship between observations at different time lags. The
@@ -104,7 +107,7 @@ simplified assumption:
 *Today\'s value equals a constant, plus a fraction of yesterday\'s
 value, plus a new random shock.*
 
-![Figure 4 AR(1) Model](/images/timeseriesp1f4.png)
+![Figure 4 AR(1) Model](/images/TimeseriesP1F4.png)
 
 Examples include: Inflation persistence; Business cycles; Commodity
 prices, etc. The parameter $\phi$ measures memory: $\phi$ \> 0 :
@@ -151,13 +154,11 @@ shape present outcomes.
 Although both models describe temporal dependence, their interpretations
 differ fundamentally.
 
-  --------------------------------------------------------------------------------------------------------
-  **Model**              **Interpretation**                           **Economic Meaning**
-  :----------------:   :------------------------------: :----------------------------------------:
-  AR                 Dependence on past values              Persistence and inertia
-  MA                 Dependence on past shocks              Memory of disturbances
-  ARMA               Combination of both                    Dynamic systems with inertia and shocks
-  --------------------------------------------------------------------------------------------------------
+|**Model**|**Interpretation**|**Economic Meaning**|
+|:---:|:---:|:---:|
+| AR |Dependence on past values|Persistence and inertia|
+| MA |Dependence on past shocks|Memory of disturbances|
+| ARMA |Combination of both|Dynamic systems with inertia and shocks|
 
 An AR model suggests that the system itself contains internal momentum.
 
@@ -166,7 +167,7 @@ whose effects gradually dissipate.
 
 Real-world systems often exhibit both characteristics simultaneously.
 
-![Figure 5 AR vs MA](/images/timeseriesp1f5.png)
+![Figure 5 AR vs MA](/images/TimeseriesP1F5.png)
 
 ------------------------------------------------------------------------
 
@@ -195,7 +196,7 @@ seek to represent.
 ARMA models provide a parsimonious framework for describing these
 interactions.
 
-![Figure 6 ARMA Model](/images/timeseriesp1f6.png)
+![Figure 6 ARMA Model](/images/TimeseriesP1F6.png)
 
 ------------------------------------------------------------------------
 
@@ -228,7 +229,7 @@ sophisticated frameworks.
 
 ------------------------------------------------------------------------
 
-**Limitations of ARMA Models**
+### Limitations of ARMA Models
 
 Despite their usefulness, ARMA models face important limitations.
 
