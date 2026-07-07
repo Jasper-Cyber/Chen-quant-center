@@ -11,9 +11,9 @@ One of the first questions in quantitative finance is whether financial
 markets are entirely random or whether traces of the past continue to
 influence the future.
 
-<div align="center">
-![Figure 1 Time Series](/images/TimeseriesP1F1.png)
-</div>
+<p align="center">
+  <img src="/images/TimeseriesP1F1.png" alt="Figure 1 Time Series" width="600" />
+</p>
 At first glance, daily price movements appear chaotic. News arrives
 unexpectedly, investor sentiment changes rapidly, and external shocks
 constantly reshape expectations. On the other hand, we often hear
@@ -25,7 +25,9 @@ unexpected events continually reshape the trajectory of economic and
 financial systems. Time-series models attempt to describe this
 interaction between persistence and innovation.
 
-![Figure 2 White Noise](/images/TimeseriesP1F2.png)
+<p align="center">
+  <img src="/images/TimeseriesP1F2.png" alt="Figure 2 White Noise" width="600" />
+</p>  
 
 Understanding these patterns is the purpose of time-series analysis.
 
@@ -61,7 +63,7 @@ time-series modeling.
 
 An intuitive question we can ask is:
 
-Does a variable tend to resemble its own past values?
+*Does a variable tend to resemble its own past values?*
 
 This concept is known as **autocorrelation**. Positive autocorrelation
 implies persistence: economic growth tends to continue, business cycles
@@ -72,7 +74,9 @@ exists, observations behave like independent random shocks. Strong
 autocorrelation suggests that historical information still contains
 explanatory power for future outcomes.
 
-![Figure 3 Autocorrelation](/images/TimeseriesP1F3.png)
+<p align="center">
+  <img src="/images/TimeseriesP1F3.png" alt="Figure 3 Autocorrelation" width="600" />
+</p>
 
 The purpose of autocorrelation function is to measure the statistical
 relationship between observations at different time lags. The
@@ -110,7 +114,9 @@ simplified assumption:
 *Today\'s value equals a constant, plus a fraction of yesterday\'s
 value, plus a new random shock.*
 
-![Figure 4 AR(1) Model](/images/TimeseriesP1F4.png)
+<p align="center">
+  <img src="/images/TimeseriesP1F4.png" alt="Figure 4 AR(1) Model" width="600" />
+</p>
 
 Examples include: Inflation persistence; Business cycles; Commodity
 prices, etc. The parameter $\phi$ measures memory: $\phi$ > 0 :
@@ -132,7 +138,7 @@ current values depend on past disturbances.
 
 An MA(1) process is given by:
 
-$$y_{t} = \mu + \epsilon_{t} + \theta\epsilon_{t - 1}$$
+$$y_t = \mu + \epsilon_t + \theta\epsilon_{t-1}$$
 
 The key idea is:
 
@@ -170,7 +176,9 @@ whose effects gradually dissipate.
 
 Real-world systems often exhibit both characteristics simultaneously.
 
-![Figure 5 AR vs MA](/images/TimeseriesP1F5.png)
+<p align="center">
+  <img src="/images/TimeseriesP1F5.png" alt="Figure 5 AR vs MA" width="600" />
+</p>
 
 ------------------------------------------------------------------------
 
@@ -181,7 +189,7 @@ mechanisms.
 
 An ARMA(1,1) specification can be written as:
 
-$$y_{t} = c + \phi y_{t - 1} + \epsilon_{t} + \theta\epsilon_{t - 1}$$
+$$y_t =c+\phi y_{t-1} + \epsilon_t + \theta\epsilon_{t-1}$$
 
 Conceptually, this means:
 
@@ -199,7 +207,9 @@ seek to represent.
 ARMA models provide a parsimonious framework for describing these
 interactions.
 
-![Figure 6 ARMA Model](/images/TimeseriesP1F6.png)
+<p align="center">
+  <img src="/images/TimeseriesP1F6.png" alt="Figure 6 ARMA Model" width="600" />
+</p>
 
 ------------------------------------------------------------------------
 
@@ -291,3 +301,5 @@ volatility clustering.
   bio="Jia Chen is the founder of Chen Quant Center, an independent research platform focused on productivity, value creation, supply chains, technology adoption, and capital allocation. Drawing on experience across industrial services, international trade, project management, economics, and software development, he explores how real-world operational systems shape long-term investment outcomes." 
   avatarUrl="" 
 />  
+
+[def]: /images/TimeseriesP1F1.png
