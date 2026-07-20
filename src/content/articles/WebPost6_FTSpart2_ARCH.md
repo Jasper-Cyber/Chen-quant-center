@@ -26,11 +26,11 @@ To model this dynamic behavior, Robert Engle introduced the
 **Autoregressive Conditional Heteroskedasticity (ARCH)** model in 1982,
 a breakthrough that earned him the Nobel Prize in Economics in 2003.
 
-***Return** measures the percentage change in an asset\'s price over a
-given period.*
+> ***Return** measures the percentage change in an asset\'s price over a
+> given period.*
 
-***Volatility** measures the variability or uncertainty of asset
-returns.*
+> ***Volatility** measures the variability or uncertainty of asset
+> returns.*
 
 <p align="center">
   <img src="/images/TSFP2F1.png" alt="Figure 1 Volatility Clustering" width="600" />
@@ -86,8 +86,8 @@ $\epsilon_t = \sigma_t z_t$
 > assumed to follow a Standard Normal $\\mathcal{N}(0,1)$ or
 > Student's $t$-distribution to capture fat tails).*
 
-- *$\sigma_t$: The conditional standard deviation (volatility) of the
-  shock at time $t$.*
+> *$\sigma_t$: The conditional standard deviation (volatility) of the
+> shock at time $t$.*
 
 #### The Conditional Variance Equation
 
@@ -112,8 +112,7 @@ apply strict boundaries to the parameters:
 - **Positive Variance:** Variance cannot be negative. Therefore, we
   require:
 
-$$\alpha_0 > 0 \quad \text{and} \quad \alpha_i \ge 0 \quad
-\text{for all } i = 1, \dots, p$$
+$$\alpha_0 > 0 \quad \text{and} \quad \alpha_i \ge 0 \quad \text{for all } i = 1, \dots, p$$
 
 - **Stationarity:** For the variance process to be stable (and not
   explode to infinity), the sum of the lag coefficients must be strictly
@@ -158,7 +157,7 @@ weight on recent shocks than on older shocks, the VaR floor spikes
 instantly on the day of a crash and decays smoothly and exponentially as
 the market calms down.
 
-$${\text{Dynamic~}\text{VaR}}_{t} = S_{t} \times \left( 1 - e^{- z_{\alpha}\sigma_{t}} \right)$$
+$${\text{Dynamic~}\text{VaR}}_{t} = S_{t} \times \left( 1 - e^{- z_{\alpha \sigma_{t}} \right)$$
 
 $S_{t}$*: The current price of the stock or asset at time* $t$*.*
 
