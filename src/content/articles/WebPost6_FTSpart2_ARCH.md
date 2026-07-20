@@ -112,13 +112,13 @@ apply strict boundaries to the parameters:
 - **Positive Variance:** Variance cannot be negative. Therefore, we
   require:
 
-$$\alpha_0 > 0 \quad \text{and} \quad \alpha_i \ge 0 \quad \text{for all } i = 1, \dots, p$$
+- $$\alpha_0 > 0 \quad \text{and} \quad \alpha_i \ge 0 \quad \text{for all } i = 1, \dots, p$$
 
 - **Stationarity:** For the variance process to be stable (and not
   explode to infinity), the sum of the lag coefficients must be strictly
   less than 1:
 
-$$\sum_{i=1}^p \alpha_i < 1$$
+- $$\sum_{i=1}^p \alpha_i < 1$$
 
 ### How the ARCH Model Works (Intuition)
 
@@ -157,7 +157,7 @@ weight on recent shocks than on older shocks, the VaR floor spikes
 instantly on the day of a crash and decays smoothly and exponentially as
 the market calms down.
 
-$${\text{Dynamic~}\text{VaR}}_{t} = S_{t} \times \left( 1 - e^{- z_{\alpha \sigma_{t}} \right)$$
+$${\text{Dynamic~}\text{VaR}}_{t} = S_{t} \times \left( 1 - e^{- z_\alpha \sigma_{t}} \right)$$
 
 $S_{t}$*: The current price of the stock or asset at time* $t$*.*
 
