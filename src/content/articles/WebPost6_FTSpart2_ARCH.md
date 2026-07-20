@@ -1,6 +1,6 @@
 ---
 title: "Understanding Financial Time Series Models (Part II): ARCH and Volatility Clustering"
-date: "2026-07-13"
+date: "2026-07-19"
 author: "Jia Chen"
 excerpt: "Chen Quant Academy Series -- Introducing Quantitative Models in Finance"
 ---
