@@ -33,7 +33,7 @@ given period.*
 returns.*
 
 <p align="center">
-  <img src="/images/TimeseriesP2F1.png" alt="Figure 1 Volatility Clustering" width="600" />
+  <img src="/images/TSFP2F1.png" alt="Figure 1 Volatility Clustering" width="600" />
 </p>
 
 To explain these observations, we allow today's uncertainty to depend on
@@ -94,15 +94,14 @@ $\epsilon_t = \sigma_t z_t$
 The core of the ARCH model is how it defines the conditional variance
 $\sigma_t^2$ as a weighted sum of past squared shocks:
 
-$$\sigma_t^2 = \alpha_0 + \alpha_1 \epsilon_{t-1}^2 + \alpha_2
-\epsilon_{t-2}^2 + \dots + \alpha_p \epsilon_{t-p}^2$$
+$$\sigma_t^2 = \alpha_0 + \alpha_1 \epsilon_{t-1}^2 + \alpha_2 \epsilon_{t-2}^2 + \dots + \alpha_p \epsilon_{t-p}^2$$
 
 Using summation notation:
 
 $$\sigma_{t}^{2} = \alpha_{0} + \sum_{\left\{ i = 1 \right\}}^{p}{\alpha_{i}\epsilon_{t - i}^{2}}$$
 
 <p align="center">
-  <img src="/images/TimeseriesP2F2.png" alt="Figure 2 ARCH Model" width="600" />
+  <img src="/images/TSFP2F2.png" alt="Figure 2 ARCH Model" width="600" />
 </p>
 
 #### Structural Constraints:
@@ -193,7 +192,7 @@ daily, helping them adjust asset allocations as market correlations
 evolve.
 
 <p align="center">
-  <img src="/images/TimeseriesP2F3.png" alt="Figure 3 Key Applications" width="600" />
+  <img src="/images/TSFP2F3.png" alt="Figure 3 Key Applications" width="600" />
 </p>
 
 ### Limitations of ARCH and the Transition to GARCH
