@@ -159,14 +159,14 @@ the market calms down.
 
 $${\text{Dynamic~}\text{VaR}}_{t} = S_{t} \times \left( 1 - e^{- z_\alpha \sigma_{t}} \right)$$
 
-$S_{t}$*: The current price of the stock or asset at time* $t$*.*
+> *$S_{t}$*: The current price of the stock or asset at time* $t$*.*
 
-$\sigma_{t}$*: The **conditional standard deviation** (volatility) of
+> *$\sigma_{t}$*: The **conditional standard deviation** (volatility) of
 the daily log returns at time* $t$*. It is \"dynamic\" because it
 updates daily, typically modeled via a rolling historical window,
 calculated directly from an **ARCH(***$p$***)** variance equation.*
 
-$z_{\alpha}$*: The critical value (z-score) from the standard normal
+> *$z_{\alpha}$*: The critical value (z-score) from the standard normal
 distribution corresponding to the chosen confidence level* $\alpha$*.*
 
 #### Option Pricing and the \"Volatility Smile\"
