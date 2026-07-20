@@ -206,7 +206,7 @@ limitation:
   introduces estimation error and reduces statistical power.
 
 - **Symmetry in Volatility Shocks:** The model uses the squared past
-  shock ($\epsilon\_{t-i}\^2$). Since positive and negative shocks
+  shock ($\epsilon_{t-i}^2$). Since positive and negative shocks
   become identical after squaring, the model cannot distinguish between
   good news and bad news. In reality, equity markets exhibit the
   **leverage effect**, where bad news triggers a much higher spike in
@@ -223,7 +223,7 @@ limitation:
 To solve the parameter problem, Tim Bollerslev introduced the
 **Generalized ARCH (GARCH)** model in 1986. GARCH simplifies the
 equation by adding lagged conditional variance terms
-($\sigma\_{t-1}^2$) directly into the variance equation, mimicking
+($\sigma_{t-1}^2$) directly into the variance equation, mimicking
 an infinite-lag ARCH model with just a few parameters. GARCH model will
 be introduced in the next article.
 
