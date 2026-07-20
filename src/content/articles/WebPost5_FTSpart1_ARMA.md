@@ -2,7 +2,7 @@
 title: "Understanding Financial Time Series Models (Part I): ARMA and Market Dynamics"
 date: "2026-07-06"
 author: "Jia Chen"
-excerpt: "Chen Quant Academy Series -- Quantitative Models Explained"
+excerpt: "Chen Quant Academy Series -- Introducing Quantitative Models in Finance"
 ---
 
 ### **Introduction: Is the Market Completely Random?**
