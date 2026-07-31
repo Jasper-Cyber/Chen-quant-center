@@ -83,17 +83,17 @@ $\sigma_t^2 = Var(r_t \mid \mathcal{F}_{t-1})$ is modeled as:
 $$\sigma_t^2 = \omega + \sum_{i=1}^{q} \alpha_i \epsilon_{t-i}^2 + \sum_{j=1}^{p} \beta_j \sigma_{t-j}^2$$
 
 > *$q$: The order of the ARCH terms (lags of past squared innovations
-> $\epsilon\_{t-i}\^2$).*
+> $\epsilon\_{t-i}^2$).*
 >
 > *$p$: The order of the GARCH terms (lags of past conditional
-> variances $\sigma\_{t-j}\^2$).*
+> variances $\sigma\_{t-j}^2$).*
 >
-> *$\omega \> 0$: The baseline constant variance floor.*
+> *$\omega > 0$: The baseline constant variance floor.*
 >
-> *$\alpha_i \\ge 0$: Coefficients measuring the short-term impact of
+> *$\alpha_i \ge 0$: Coefficients measuring the short-term impact of
 > recent market shocks (**ARCH parameters**).*
 >
-> *$\beta_j \\ge 0$: Coefficients measuring the persistence/inertia
+> *$\beta_j \ge 0$: Coefficients measuring the persistence/inertia
 > of volatility (**GARCH parameters**).*
 
 Structural Constraints:
@@ -101,8 +101,7 @@ Structural Constraints:
 To ensure the model is physically and mathematically logical, we must
 apply strict boundaries to the parameters:
 
-- **Positive Variance:** $\omega \> 0, \alpha_i \ge 0, \beta_j \ge
-  0$ ensure that the calculated variance $\sigma_t\^2$ is strictly
+- **Positive Variance:** $\omega > 0, \alpha_i \ge 0, \beta_j \ge 0$ ensure that the calculated variance $\sigma_t^2$ is strictly
   positive for all $t$.
 
 - **Stationarity:** For the variance process to be stable (and not
@@ -125,8 +124,7 @@ In empirical finance, high-order lag models are rarely necessary. The
 $GARCH(1, 1)$ model captures the vast majority of financial volatility
 dynamics using only three parameters:
 
-$$\sigma_t^2 = \omega + \alpha_1 \epsilon_{t-1}^2 + \beta_1
-\sigma_{t-1}^2$$
+$$\sigma_t^2 = \omega + \alpha_1 \epsilon_{t-1}^2 + \beta_1 \sigma_{t-1}^2$$
 
 > *$\omega$ **(Baseline Variance):** The underlying long-term
 > variance level to which the system decays in the absence of new
@@ -166,8 +164,7 @@ Replaces static rolling-window standard deviations with a daily updated
 $\sigma_t$. This eliminates the \"ghosting effect\" of static windows
 and ensures risk thresholds dynamically expand during market crises.
 
-$$VaR_{t} = f\left( \sigma_{t} \right)
-$$
+$$VaR_{t} = f\left( \sigma_{t} \right)$$
 
 This allows institutions to react much faster during market stress.
 
