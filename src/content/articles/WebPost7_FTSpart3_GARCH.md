@@ -83,10 +83,10 @@ $\sigma_t^2 = Var(r_t \mid \mathcal{F}_{t-1})$ is modeled as:
 $$\sigma_t^2 = \omega + \sum_{i=1}^{q} \alpha_i \epsilon_{t-i}^2 + \sum_{j=1}^{p} \beta_j \sigma_{t-j}^2$$
 
 > *$q$: The order of the ARCH terms (lags of past squared innovations
-> $\epsilon\_{t-i}^2$).*
+> $\epsilon_{t-i}^2$).*
 >
 > *$p$: The order of the GARCH terms (lags of past conditional
-> variances $\sigma\_{t-j}^2$).*
+> variances $\sigma_{t-j}^2$).*
 >
 > *$\omega > 0$: The baseline constant variance floor.*
 >
