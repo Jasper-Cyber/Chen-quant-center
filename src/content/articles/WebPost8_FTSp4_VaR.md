@@ -82,7 +82,6 @@ loss threshold relative to the expected future portfolio value.
 <img src="/images/TSFP4F1.png" alt="Figure 1 VaR and CVaR "
 width="600" />
 </p>
-------------------------------------------------------------------------
 
 ### Three Main Approaches to VaR
 
