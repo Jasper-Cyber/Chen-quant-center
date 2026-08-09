@@ -111,7 +111,7 @@ to assume that returns follow a particular probability distribution.
 This allows the historical sample to retain features such as skewness,
 fat tails, unusual market movements, non-normal return behavior.
 
-However**, the past may not represent the current market.** A financial
+However, **the past may not represent the current market.** A financial
 crisis that happened ten years ago may have little relevance to today\'s
 portfolio. Conversely, if a new crisis occurs that has never appeared in
 the historical sample, historical VaR may severely underestimate the
