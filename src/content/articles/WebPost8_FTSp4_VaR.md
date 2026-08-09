@@ -73,10 +73,15 @@ when events fall in the left tail part that exceed the threshold.
 **Higher confidence does not mean higher certainty about the exact loss.
 It means we are moving further into the tail of the distribution.**
 
-**Absolute VaR** measures the maximum loss relative to zero wealth
-change (or initial investment); **Relative VaR** measures the maximum
-loss relative to the expected future portfolio value.
+**Absolute VaR** measures the loss threshold relative to zero wealth
+change (or initial investment); **Relative VaR** measures the
+loss threshold relative to the expected future portfolio value.
 
+<p align="center">
+
+<img src="/images/TSFP4F1.png" alt="Figure 1 VaR and CVaR "
+width="600" />
+</p>
 ------------------------------------------------------------------------
 
 ### Three Main Approaches to VaR
@@ -123,7 +128,7 @@ The second approach assumes a specific probability distribution for
 portfolio returns. The simplest example is the normal distribution.
 Suppose:
 
-$$R\_{t+1}\sim N(\mu,\sigma^2)$$
+$$R_{t+1}\sim N(\mu,\sigma^2)$$
 
 > *$\mu$ --- expected return;*
 >
@@ -147,8 +152,7 @@ equation is often approximated as:
 
 $$VaR_{1-\alpha}\approx V_t z_{1-\alpha}\sigma$$
 
-with the sign convention adjusted by replace $z_{\alpha} to the same
-value positive, $z_{1-\alpha}$ .
+With the sign convention adjusted, $z_{\alpha}$ can be replaced by the equivalent positive quantile  $z_{1-\alpha} = -z_{\alpha}$.
 
 *Why GARCH Matters for VaR*
 
@@ -169,8 +173,6 @@ This creates an important connection between the models introduced
 throughout this series. While ARMA models expected returns, GARCH models
 conditional volatility, VaR translates these forecasts into a
 potential-loss threshold.
-
-------------------------------------------------------------------------
 
 #### 3. Monte Carlo VaR
 
@@ -214,6 +216,13 @@ Shortfall measures the average loss among the worst 5% of outcomes.
 
 This provides information about the **severity of tail losses** that VaR
 alone cannot provide.
+
+<p align="center">
+
+<img src="/images/TSFP4F2.png" alt="Figure 2 Three Approaches to VaR "
+width="600" />
+
+</p>
 
 ------------------------------------------------------------------------
 
