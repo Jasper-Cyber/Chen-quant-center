@@ -100,7 +100,7 @@ distribution behaves.
 
 The simplest approach is to use historical returns directly. Suppose we
 have 1,000 historical daily returns. We arrange them from the worst to
-the best: $$_{(1)}\le R_{(2)}\le \dots\le R_{(1000)}$ ，For a 95% VaR, we 
+the best: $R_{(1)}\le R_{(2)}\le \dots\le R_{(1000)}$ ，For a 95% VaR, we 
 examine approximately the bottom 5% of observations.
 
 The historical VaR is determined directly from the empirical
