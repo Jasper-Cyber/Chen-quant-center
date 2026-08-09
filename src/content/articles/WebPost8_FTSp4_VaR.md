@@ -1,5 +1,5 @@
 ---
-title: "Understanding Financial Risk Models (Part IV): VaR/CVaR --- How Much Could We Lose?"
+title: "Understanding Financial Time Series Models (Part IV): VaR/CVaR --- How Much Could We Lose?"
 date: "2026-08-09"
 author: "Jia Chen"
 excerpt: "Chen Quant Academy Series -- Introducing Quantitative Models in Finance"
