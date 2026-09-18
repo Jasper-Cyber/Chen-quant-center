@@ -156,12 +156,12 @@ historically appeared to exhibit different average return behavior from
 larger companies.
 
 In the Fama-French framework, an asset can also have an estimated **SMB
-factor loading, β~SMB~**. A positive β~SMB~ indicates that the asset\'s
-returns tend to move with the SMB factor, while a negative β~SMB~
+factor loading, $\beta_{SMB}$**. A positive $\beta_{SMB}$ indicates that the asset\'s
+returns tend to move with the SMB factor, while a negative $\beta_{SMB}$
 indicates an opposite relationship.
 
-Importantly, β~SMB~ does **not** classify a company as small or large.
-Company size is used when constructing the SMB factor; β~SMB~ is
+Importantly, $\beta_{SMB}$ does **not** classify a company as small or large.
+Company size is used when constructing the SMB factor; $\beta_{SMB}$ is
 subsequently estimated from the asset\'s return relationship with that
 factor.
 
@@ -173,9 +173,9 @@ and low book-to-market ratios.
 
 $$HML = R_{\text{High~B/M}} - R_{\text{Low~B/M}}$$
 
-An asset\'s exposure to the value factor is represented by **β~HML~**. A
-positive β~HML~ indicates that its returns tend to move with the HML
-factor, while a negative β~HML~ indicates an opposite relationship. This
+An asset\'s exposure to the value factor is represented by **$\beta_{HML}$**. A
+positive $\beta_{HML}$ indicates that its returns tend to move with the HML
+factor, while a negative $\beta_{HML}$ indicates an opposite relationship. This
 factor exposure should not be confused with directly classifying the
 asset as a value or growth stock.
 
