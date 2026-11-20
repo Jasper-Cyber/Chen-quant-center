@@ -1,5 +1,6 @@
 import { getArticleData, getAllArticleSlugs } from "@/lib/articles";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const slugs = getAllArticleSlugs();
@@ -26,9 +27,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <article className="prose prose-slate mx-auto max-w-3xl lg:prose-lg">
         {article.category === "Company Research" && (
           <div className="mb-4 flex flex-wrap items-center gap-3 text-sm not-prose">
-            <a href="/research/company-research" className="font-semibold text-accent hover:underline">
+            <Link href="/research/company-research" className="font-semibold text-accent hover:underline">
               Company Research
-            </a>
+            </Link>
             {article.ticker && <span className="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-accent">{article.ticker}</span>}
             <time className="text-mist">{article.date}</time>
           </div>
