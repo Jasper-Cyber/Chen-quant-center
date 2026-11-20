@@ -17,6 +17,9 @@ export default function Footer() {
             <Link href="/research" className="text-mist hover:text-accent">
               Research
             </Link>
+            <Link href="/research/company-research" className="text-mist hover:text-accent">
+              Company Research
+            </Link>
             <Link href="/market" className="text-mist hover:text-accent">
               Market Data
             </Link>

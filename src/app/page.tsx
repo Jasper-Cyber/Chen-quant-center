@@ -75,7 +75,14 @@ export default function HomePage() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {recent.map((a) => (
             <article key={a.slug} className="card">
-              <time className="label-muted">{a.date}</time>
+              <div className="flex flex-wrap items-center gap-2">
+                <time className="label-muted">{a.date}</time>
+                {a.category === "Company Research" && (
+                  <span className="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-accent">
+                    Company Research{a.ticker ? ` · ${a.ticker}` : ""}
+                  </span>
+                )}
+              </div>
               <h3 className="mt-2 font-serif text-lg font-semibold text-ink">
                 {a.title}
               </h3>

@@ -1,0 +1,42 @@
+name: Validate CQC Company Research site
+
+on:
+  push:
+    branches: [feature/company-research-20261120]
+    paths:
+      - .github/workflows/validate-company-research.yml
+      - src/content/articles/**
+      - src/lib/articles.ts
+      - src/app/research/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
+      - name: Validate NVIDIA article metadata and key references
+        run: |
+          node - <<'JS'
+          const fs = require('fs');
+          const s = fs.readFileSync('src/content/articles/nvda-equity-research-2026-11.md','utf8');
+          for (const v of ['category: "Company Research"','ticker: "NVDA"','Q3 FY2027','115.844','Data sources','No fair-value price target']) {
+            if (!s.includes(v)) throw Error('Missing report requirement: ' + v);
+          }
+          if (s.includes('Expected value (probability-weighted)')) throw Error('Unreviewed scenario in public report');
+          console.log('Article checks passed');
+          JS
+      - name: Next.js production build
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
