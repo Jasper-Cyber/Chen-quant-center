@@ -23,6 +23,11 @@ export default function CompanyResearchPage() {
         positioning, valuation scenarios, and investment risks. Reports may use
         AI-assisted commentary, but the analysis and source figures require editorial review.
       </p>
+      <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-700">
+        I plan to select a different publicly traded company each week and publish a
+        new research report here, with a focus on its business fundamentals,
+        valuation, and key risks.
+      </p>
 
       <section className="mt-12" aria-labelledby="reports-heading">
         <h2 id="reports-heading" className="font-serif text-xl font-semibold">
