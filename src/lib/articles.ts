@@ -10,11 +10,15 @@ import rehypeRaw from 'rehype-raw';
 import rehypeKatex from 'rehype-katex';
 import rehypeStringify from 'rehype-stringify';
 
+export type ArticleCategory = 'Company Research' | 'Insights';
+
 export type Article = {
   slug: string;
   title: string;
   date: string;
   excerpt: string;
+  category: ArticleCategory;
+  ticker?: string;
   contentHtml?: string;
   href?: string;
 };
@@ -23,7 +27,7 @@ const articlesDirectory = path.join(process.cwd(), 'src', 'content', 'articles')
 
 export function getSortedArticlesData(): Article[] {
   // Get file names under /src/content/articles
-  const fileNames = fs.readdirSync(articlesDirectory);
+  const fileNames = fs.readdirSync(articlesDirectory).filter((name) => name.endsWith('.md'));
   const allArticlesData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const slug = fileName.replace(/\.md$/, '');
@@ -41,6 +45,8 @@ export function getSortedArticlesData(): Article[] {
       title: matterResult.data.title,
       date: matterResult.data.date,
       excerpt: matterResult.data.excerpt,
+      category: matterResult.data.category === 'Company Research' ? 'Company Research' : 'Insights',
+      ticker: typeof matterResult.data.ticker === 'string' ? matterResult.data.ticker : undefined,
       href: `/research/${slug}`, // Generate href based on slug
     } as Article;
   });
@@ -78,13 +84,19 @@ export async function getArticleData(slug: string): Promise<Article> {
     title: matterResult.data.title ?? 'Untitled Article',
     date: matterResult.data.date ?? new Date().toISOString().split('T')[0],
     excerpt: matterResult.data.excerpt ?? '',
+    category: matterResult.data.category === 'Company Research' ? 'Company Research' : 'Insights',
+    ticker: typeof matterResult.data.ticker === 'string' ? matterResult.data.ticker : undefined,
     contentHtml, // Now contains HTML string
     href: `/research/${slug}`,
   } as Article;
 }
 
+export function getCompanyResearchArticles(): Article[] {
+  return getSortedArticlesData().filter((article) => article.category === 'Company Research');
+}
+
 export function getAllArticleSlugs() {
-  const fileNames = fs.readdirSync(articlesDirectory);
+  const fileNames = fs.readdirSync(articlesDirectory).filter((name) => name.endsWith('.md'));
   return fileNames.map((fileName) => {
     return {
       params: {
