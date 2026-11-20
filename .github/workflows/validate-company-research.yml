@@ -5,6 +5,9 @@ on:
     branches: [feature/company-research-20261120]
     paths:
       - .github/workflows/validate-company-research.yml
+      - src/content/articles/**
+      - src/lib/articles.ts
+      - src/app/research/**
   workflow_dispatch:
 
 permissions:
