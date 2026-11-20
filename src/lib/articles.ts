@@ -97,11 +97,7 @@ export function getCompanyResearchArticles(): Article[] {
 
 export function getAllArticleSlugs() {
   const fileNames = fs.readdirSync(articlesDirectory).filter((name) => name.endsWith('.md'));
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        slug: fileName.replace(/\.md$/, ''),
-      },
-    };
-  });
+  return fileNames.map((fileName) => ({
+    slug: fileName.replace(/\.md$/, ''),
+  }));
 }
